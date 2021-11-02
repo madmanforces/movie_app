@@ -40,9 +40,7 @@ const foodILike = [
 function App() {
   return (
     <div>
-      {foodILike.map(dish => (
-        <Food name={dish.name} picture={dish.image} />
-      ))}
+      {foodILike.map(dish => (<Food name={dish.name} picture={dish.image} />))}
     </div>
   );
 }
